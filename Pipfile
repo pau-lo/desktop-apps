@@ -5,9 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 autopep8 = "*"
+pylint= "*"
 
 [packages]
-tkinter = "*"
+aniso8601 = "==5.1.0"
+relativetimebuilder = "<2.0.0"
 pyinstaller = "*"
-tkmessagebox = "*"
 autopep8 = "*"
+graphene = "*"
+
+[requires]
+python_version = "3.8"

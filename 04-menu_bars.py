@@ -131,6 +131,5 @@ root.bind('<Command-a>', show_about)
 # Make your menu show on the screen
 root.config(menu=the_menu)
 
-
 # Keeps our program running until quit
 root.mainloop()

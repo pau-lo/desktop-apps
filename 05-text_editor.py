@@ -85,19 +85,12 @@ class TextEditor:
             # Write the text and close
             # file.write(data)
 
-            # ----- NEXT TUTORIAL -----
-
-            # print(str(self.text_area.dump('1.0', END)))
-            # self.remake_file(self.text_area.dump('1.0', END))
-
             # Get list of tuples
             text_area_list = self.text_area.dump('1.0', END + '-1c')
             # Write list of tuples to file
             file.write(' '.join('("{}", "{}", "{}"), '.format(x[0],
-                                                   x[1], x[2])
-                                 for x in text_area_list))
-
-            # ----- END NEXT TUTORIAL -----
+                                                              x[1], x[2])
+                                for x in text_area_list))
 
             file.close()
 
@@ -123,7 +116,7 @@ class TextEditor:
         # area
         self.text_area = Text(frame, width=600, height=550,
                               yscrollcommand=scrollbar.set,
-                              padx=10, pady=10, font=("Georgia", "28"))
+                              padx=10, pady=10, font=("Georgia", "16"))
 
         # Call yview when the scrollbar is moved
         scrollbar.config(command=self.text_area.yview)
@@ -174,4 +167,3 @@ the_menu = Menu(root)
 text_editor = TextEditor(root)
 
 root.mainloop()
-

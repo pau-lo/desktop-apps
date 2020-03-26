@@ -37,7 +37,6 @@ USE CASE
 
 '''
 
-
 class Calculator:
     # Stores the current value to display in the entry
     calc_value = 0.0
